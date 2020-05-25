@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* debug */
+[class*="col-"] {
+  min-height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+#card_ [class*="col-"] {
+  background-color: red;
+}
+
+#blue_ [class*="col-"] {
+  background-color: blue;
+}
