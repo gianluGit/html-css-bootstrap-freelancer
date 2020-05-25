@@ -11,6 +11,10 @@
   border: 1px solid black;
 }
 
+#jumbo_ [class*="col-"] {
+  background-color: lightgreen;
+}
+
 #card_ [class*="col-"] {
   background-color: red;
 }
