@@ -69,11 +69,20 @@ header .navbar-default .navbar-nav > li > a:hover {
   color: white;
 }
 
-.contenuto_jumbo hr {
-  max-width: 150px;
-  margin: 30px auto;
-  border-top: 4px solid white;
+.contenuto_jumbo span, .about_title span  {
+  display: inline-block;
+  width: 150px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
 }
+
+/* stella comune a tutta la pagina */
+#stellina {
+  border: none;
+  display: inline;
+  font-size: 30px;
+}
+/*  */
 
 .contenuto_jumbo h4 {
   margin-bottom: 30px;
@@ -84,22 +93,50 @@ header .navbar-default .navbar-nav > li > a:hover {
 }
 
 /* portfolio */
-.contenuto_portfolio hr {
-  max-width: 150px;
-  margin: 30px auto;
-  border-top: 4px solid black;
+.contenuto_portfolio span, .contact_me-title span {
+  display: inline-block;
+  width: 150px;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
 }
+
+main section:first-child {
+  margin-bottom: 40px;
+}
+
 
 /* cards */
 .contenuto_cards img {
-  height: 200px;
+  height: auto;
   max-width: 100%;
+  border-radius: 5%;
 }
 
 .contenuto_cards {
-  background-color: #8B0000;
-  margin: 10px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contenuto_cards .layover_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(102 ,205 , 170, 0.8);
   border-radius: 5%;
+  display: none;
+}
+
+.contenuto_cards .layover_ span {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  line-height: 260px;
+}
+
+.contenuto_cards:hover .layover_ {
+  display: block;
 }
 
 /* about */
@@ -109,10 +146,8 @@ header .navbar-default .navbar-nav > li > a:hover {
   margin-bottom: 40px;
 }
 
-#about hr {
-  max-width: 150px;
-  margin: 30px auto;
-  border-top: 4px solid white;
+#about .about_title {
+  margin-bottom: 40px;
 }
 
 #about p {
@@ -134,11 +169,10 @@ header .navbar-default .navbar-nav > li > a:hover {
 }
 
 /* contact me */
-.contact_me-title hr {
-  max-width: 150px;
-  margin: 30px auto;
-  border-top: 4px solid black;
+#contattami .contact_me-title {
+  margin-bottom: 40px;
 }
+
 
 /* contact me form */
 #contattami {
